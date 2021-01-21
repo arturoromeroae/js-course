@@ -6,9 +6,13 @@
     de instrucciones que se ultilizan las veces que
     deseamos.
 */
-
+// defino la funcion
 function calculadora() {
-    return "hola soy la calculadora";
-}
+    // conjunto de instrucciones a ejecutar
+    console.log("hola soy la calculadora");
+    console.log("si soy yo");
 
-console.log(calculadora);
+    // return "hola soy la calculadora";
+}
+// invocar o llamar a la funcion
+calculadora()
