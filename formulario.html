@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio DOM, enventos y funciones</title>
+    <script src="js/32-ejercicio-dom.js"></script>
+    <style>
+        .box {
+            width: 200px;
+            height: 250px;
+            float: left;
+            margin: 20px;
+        }
+
+        .dashed{
+            border: 3px dashed black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Ejercicio:
+    1. formulario con los campos: nombre apellido y edad
+    2. boton para enviar el formulario: evento submit
+    3. mostrar datos por pantalla
+    4. tener un boton que al darle click nos muestra los datos actuales del form 
+    -->
+    <h1>
+        Ejercicio DOM, enventos y 
+        funciones - curso JS
+    </h1>
+    <div class="box">
+        <form action="#" method="POST" id="form" onsubmit="return false;">
+            
+                <label for="name">Nombre</label><br>
+                <input type="text" name="name" id="name"><br>
+            
+                <label for="last_name">Apellido</label><br>
+                <input type="text" name="last_name" id="last_name"><br>
+            
+                <label for="age">Edad</label><br>
+                <input type="number" name="age" id="age"><br>
+                <br>
+                <input type="submit" value="Enviar" id="submit">
+                <button type="button">Ver Contenido</button>
+        </form>
+    </div>
+
+    <div class="box dashed">
+        <h3>Informacion del usuario</h3>
+        <hr>
+    </div>
+</body>
+</html>
